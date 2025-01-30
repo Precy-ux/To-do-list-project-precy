@@ -2,29 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=10, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>To-Do-List</h1>
-    <form action="" id="submit-form">
-        <div class="container">
-          <div class="input-container" id="input-container">
-           <input type="text" id="taskInput" placeholder="Add a new task">
-           <button onclick="addTask()" type="button">Add</button> 
-          </div>
-          <small></small>
-          <!-- Task list -->
-            <ol id="tasklist">
-                <!-- Will remove this later, and use Vanilla JS to populate -->
-                <li id="list-item"></li>
-            </ol>
-
-
-        </div>
-    </form>
-    
+    <div class="container">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
     <script src="script.js"></script>
-</form>
+</body>
 </html>

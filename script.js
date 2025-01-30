@@ -41,12 +41,14 @@ function addTask() {
     let taskList = document.getElementById("taskList");
 
     const taskValue = taskInput.value.trim();
-    if (taskInput.value.trim() === "") {
-        alert("Please enter a task!")
+    if (taskValue === "") {
+        const inputError = document.getElementById("error");
+        inputError.innerHTML = "Please enter a task!";
         inputError.style.color = "red";
         inputError.style.display = "block";
         return;
     }
+    
 
     
     // Create new task item
